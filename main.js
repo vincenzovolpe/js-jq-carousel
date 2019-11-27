@@ -16,7 +16,7 @@ $(document).ready(function(){
         // Nascondo l'immagine attualmente presente
         $('.immagine-carosello').eq(immagine_attuale).hide();
         // Aggiorno l'indice dell'immagine attuale
-        immagine_attuale = $(this).data('num') - 1;
+        immagine_attuale = $(this).data('numeroimmagine') - 1;
         console.log(immagine_attuale);
         // Mostro l'immagine successiva (quella relativa al pallino cliccato)
         $('.immagine-carosello').eq(immagine_attuale).show();
