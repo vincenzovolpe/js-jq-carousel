@@ -3,7 +3,6 @@ $(document).ready(function(){
     $('.immagine-carosello:first').show();
     // Dichiaro una variabile in cui memorizzo l'indice dell'iimagine attuale
     var immagine_attuale = 0;
-    console.log(immagine_attuale);
     // Aggungo il colore nero al pallino attuale corrispondente all'immagine immagine_attuale
     $('.pallini>span:first').addClass('nero');
 
@@ -17,7 +16,6 @@ $(document).ready(function(){
         $('.immagine-carosello').eq(immagine_attuale).hide();
         // Aggiorno l'indice dell'immagine attuale
         immagine_attuale = $(this).data('numeroimmagine') - 1;
-        console.log(immagine_attuale);
         // Mostro l'immagine successiva (quella relativa al pallino cliccato)
         $('.immagine-carosello').eq(immagine_attuale).show();
     });
